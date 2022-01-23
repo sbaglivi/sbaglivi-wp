@@ -1,0 +1,292 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/poppins/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/poppins/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  background-color: rgb(210, 210, 210);
+  --red: #ce0303;
+}
+
+/* -------------- NAVBAR ------------ */
+.navbar {
+  width: 100%;
+  flex: 0 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  --navbar-background-color: rgb(238, 238, 238);
+  background-color: var(--navbar-background-color);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+.navbar-links {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+#menu {
+  display: none;
+}
+.menu-label {
+  height: 35px;
+  width: 35px;
+}
+.menu-label img {
+  height: 100%;
+  width: 100%;
+}
+#menu:checked ~ .collapsible {
+  max-height: 100%;
+}
+.collapsible {
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  max-height: 0%;
+  overflow: hidden;
+  background-color: var(--navbar-background-color);
+}
+.collapsible li {
+  margin: 8px;
+}
+.collapsible a {
+  color: black;
+}
+.logo {
+  height: 50px;
+}
+
+/* ----------- CONTENT ------------------- */
+.content {
+  flex: 1 0;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.wp-block-columns {
+  row-gap: 30px;
+}
+.title {
+  font-size: 26px;
+}
+.title-link {
+  color: black;
+  text-decoration: none;
+}
+.read-more-link,
+.read-more-link:visited {
+  color: var(--red);
+}
+.page-links > a,
+.page-links > a:visited {
+  color: black;
+}
+.post-first-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.company-name {
+  color: red;
+}
+.front-page-content {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100% !important;
+  max-width: 100% !important;
+  background: url("assets/images/brickwall.png");
+}
+#respond {
+  width: 100%;
+  max-width: 500px;
+}
+#commentform > * {
+  margin-bottom: 8px;
+}
+#commentform input[type="text"] {
+  padding: 4px;
+  font-family: "Poppins";
+  width: 100%;
+}
+#comment {
+  width: 100%;
+  padding: 4px;
+  height: 4em;
+  font-family: "Poppins";
+}
+#submit {
+  padding: 8px;
+}
+.comment-list {
+  list-style: none;
+}
+.comment-body a,
+.comment-body a:visited,
+.comment-respond a,
+.comment-respond a:visited {
+  color: black;
+}
+.fn {
+  font-style: normal;
+  font-weight: bold;
+  color: var(--red);
+}
+.fn a,
+.fn a:visited {
+  color: var(--red);
+}
+.comment-meta > a:first-of-type {
+  text-decoration: none;
+}
+.comment-navigation a,
+.comment-navigation a:visited {
+  color: black;
+}
+.back-link,
+.back-link:visited {
+  color: var(--red);
+}
+/* ------- SEARCH BAR ---------- */
+.form-div {
+  width: 100%;
+}
+#searchform {
+  width: 100%;
+}
+#searchform > div {
+  display: flex;
+  column-gap: 10px;
+}
+#s {
+  flex: 1 0 200px;
+  height: 32px;
+  border-radius: 4px;
+  padding: 6px;
+  display: flex;
+  border: 1px solid black;
+}
+#searchsubmit {
+  padding: 6px 18px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+/* ---------- CONTACT FORM ----------------- */
+.wpforms-container {
+  width: 90% !important;
+  max-width: 500px;
+}
+.wpforms-submit {
+  width: 40% !important;
+}
+/* -------------- FOOTER --------------  */
+.footer {
+  flex: 0 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+/* -------------- MEDIA QUERIES FOR LARGER DEVICES  --------------------- */
+
+@media (min-width: 576px) {
+  /* CHANGE NAVBAR BACK */
+  .menu-label {
+    display: none;
+  }
+  .collapsible {
+    max-height: fit-content;
+    position: static;
+  }
+  #menu-main-menu > li {
+    display: inline-block;
+  }
+
+  .wp-block-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    width: 80%;
+  }
+  .navbar-links {
+    width: 85%;
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    width: 70%;
+  }
+  .navbar-links {
+    width: 75%;
+  }
+  .wp-block-columns {
+    width: 80vw !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wp-block-columns {
+    width: 70vw !important;
+    max-width: 1000px !important;
+  }
+  .navbar-links {
+    width: 60%;
+  }
+  .content {
+    width: 50%;
+    max-width: 900px;
+  }
+}
+
+/*!
+Theme Name: sbaglivi-wp
+Theme URI: http://github.com/sbaglivi
+Author: sbaglivi
+Author URI: http://github.com/sbaglivi
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: sbaglivi
+Tags: responsive, minimalist, simple.
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+*/

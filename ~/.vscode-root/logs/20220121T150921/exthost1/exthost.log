@@ -1,0 +1,15 @@
+[2022-01-21 15:09:23.458] [exthost] [info] Extension host with pid 14126 started
+[2022-01-21 15:09:23.458] [exthost] [info] Skipping acquiring lock for /srv/www/wordpress/wp-content/themes/temp/~/.vscode-root/User/workspaceStorage/22e1c2e51931149d6080438778034906.
+[2022-01-21 15:09:23.499] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+[2022-01-21 15:09:23.521] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-21 15:09:23.523] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-21 15:09:23.539] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-21 15:09:23.554] [exthost] [info] Eager extensions activated
+[2022-01-21 15:09:23.567] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-21 15:09:23.577] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-21 15:09:23.582] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2022-01-21 15:09:26.075] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+[2022-01-21 15:09:27.016] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+[2022-01-21 15:09:27.259] [exthost] [info] ExtensionService#_doActivateExtension vscode.php-language-features, startup: false, activationEvent: 'onLanguage:php'
+[2022-01-21 15:10:10.090] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-01-21 15:10:10.095] [exthost] [info] Extension host with pid 14126 exiting with code 0
